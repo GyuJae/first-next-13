@@ -1,0 +1,7 @@
+@use '/styles/mixins/flexbox';
+@use '/styles/constants/colors';
+
+.wrapper {
+  @include flexbox.flexbox;
+  background-color: colors.$PINK;
+}

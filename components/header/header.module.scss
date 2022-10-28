@@ -1,0 +1,15 @@
+@use '/styles/constants/colors';
+@use '/styles/mixins/flexbox';
+
+.wrapper {
+  @include flexbox.flexbox(between);
+  background-color: green;
+  padding: 5px 10px;
+
+  .navigator {
+    ul {
+      @include flexbox.flexbox(between);
+      column-gap: 15px;
+    }
+  }
+}
